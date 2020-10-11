@@ -8,10 +8,16 @@ class Turn
   end
 
   def correct?
+    if guess = true
+      puts @feedback
+    else
+      puts "Incorrect."
+    end
   end
-  
-  # def feedback
-  # end
+
+  def feedback
+    puts "Correct!"
+  end
 end
 
 # require "pry"; binding.pry

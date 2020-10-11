@@ -11,9 +11,13 @@ class Deck
   end
 
   def cards_in_category(category)
-    cards.each do |card|
-      if card == :STEM
+    cards.each do |category|
+      if category == :STEM
         return card
+      elsif card == :Geography
+        return card
+      else
+        return []
       end
     end
   end

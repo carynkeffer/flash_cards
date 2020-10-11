@@ -8,16 +8,18 @@ class Turn
   end
 
   def correct?
-    if guess = true
-      puts @feedback
+    if @guess == @card.answer
+      return true
     else
-      puts "Incorrect."
+      return false
     end
   end
 
   def feedback
-    puts "Correct!"
+    if correct? == true
+      return "Correct!"
+    else
+      return "Incorrect!"
+    end
   end
 end
-
-# require "pry"; binding.pry
